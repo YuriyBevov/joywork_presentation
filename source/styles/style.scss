@@ -1,0 +1,17 @@
+@import "fonts";
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "cmn";
+
+//--- plugins
+
+@import "plugins/swiper";
+
+// blocks
+@import "common/header";
+@import "common/blocks/info";
+@import "common/blocks/user";
+
+@import "common/footer";

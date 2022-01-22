@@ -1,0 +1,21 @@
+.user {
+    display: flex;
+
+    img {
+        margin-right: 2rem;
+    }
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        span,
+        a {
+            margin-bottom: 1.2rem;
+        }
+
+        a:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
