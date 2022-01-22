@@ -1,0 +1,20 @@
+.presentation {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__section {
+        width: 48%;
+        max-width: 870px;
+        margin-right: auto;
+        margin-bottom: 10px;
+
+        &--about,
+        &--map {
+            width: 51%;
+            max-width: 930px;
+            margin-right: 0;
+        }
+    }
+}

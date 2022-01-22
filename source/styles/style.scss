@@ -11,7 +11,14 @@
 
 // blocks
 @import "common/header";
-@import "common/blocks/info";
+@import "common/blocks/contacts";
 @import "common/blocks/user";
+
+@import "sections/presentation";
+
+@import "blocks/slider";
+@import "blocks/about";
+@import "blocks/description";
+@import "blocks/map";
 
 @import "common/footer";

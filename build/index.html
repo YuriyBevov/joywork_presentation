@@ -8,6 +8,7 @@
     <meta name="keywords" content="">
     <title></title>
     <link rel="stylesheet" href="./css/styles.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?56c6be8d-b5f9-45d5-8ffa-7fdb884fcf53&amp;lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <div style="display:none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-calendar" viewBox="0 0 18 18">
@@ -20,8 +21,8 @@
     </div>
     <header class="header">
       <div class="cmn__container header__container"><img class="header__logo" src="./assets/img/logo.png" alt="логотип" width="117" height="100">
-        <div class="header__info">
-          <div class="info"><span class="cmn__text cmn__text--small cmn__main">Агентство недвижимости<br>Первое Ипотечное Агентство</span><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="https://www.piaspb.ru">www.piaspb.ru</a><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="mailto:N.Zueva@pia-spb.ru">N.Zueva@pia-spb.ru</a><a class="cmn__text cmn__text--info cmn__main" href="tel:+78123353696">+78123353696</a></div>
+        <div class="header__contacts">
+          <div class="contacts"><span class="cmn__text cmn__text--small cmn__main">Агентство недвижимости<br>Первое Ипотечное Агентство</span><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="https://www.piaspb.ru">www.piaspb.ru</a><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="mailto:N.Zueva@pia-spb.ru">N.Zueva@pia-spb.ru</a><a class="cmn__text cmn__text--info cmn__main" href="tel:+78123353696">+78123353696</a></div>
         </div>
         <div class="header__user">
           <div class="user"><img src="./assets/img/avatar.png" alt="аватар" width="100" height="100">
@@ -33,17 +34,107 @@
     <main>
       <section class="presentation">
         <div class="cmn__container">
-          <div class="slider">
-            <p>slider</p>
-          </div>
-          <div class="info">
-            <p>info</p>
-          </div>
-          <div class="description">
-            <p>description</p>
-          </div>
-          <div class="map">
-            <p>map</p>
+          <div class="presentation__container">
+            <div class="presentation__section presentation__section--slider">
+              <div class="slider">
+                <div class="swiper-container apartment-slider"> 
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/img/slide_1.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_2.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_3.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_4.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_5.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_6.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_7.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_8.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_1.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_6.jpg" alt="фото объекта"></div>
+                    <div class="swiper-slide"><img src="./assets/img/slide_7.jpg" alt="фото объекта"></div>
+                  </div>
+                  <div class="swiper-container apartment-slider-thumbs" thumbsSlider="">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./assets/img/slide_1.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_2.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_3.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_4.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_5.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_6.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_7.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_8.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_1.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_6.jpg" alt="фото объекта"></div>
+                      <div class="swiper-slide"><img src="./assets/img/slide_7.jpg" alt="фото объекта"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__section presentation__section--about">
+              <div class="about">
+                <div class="about__header">
+                  <h2 class="cmn__title">Объект 23720026</h2>
+                  <div class="about__header-section">
+                    <div class="about__header-date">
+                      <svg width="18" height="18">
+                        <use xlink:href="#icon-calendar"></use>
+                      </svg><span class="cmn__text cmn__text--small cmn__light">15 января 2022 18:34</span>
+                    </div><span class="cmn__text cmn__text--small cmn__light">Продается</span>
+                  </div>
+                  <div class="about__header-section">
+                    <address class="cmn__text cmn__text--med cmn__main">Самарская обл, Сызранский р-н, деревня Бутырки, ул Башканова </address>
+                  </div>
+                  <div class="about__header-section">
+                    <div class="about__header-metro">
+                      <svg width="20" height="20">
+                        <use xlink:href="#icon-metro"></use>
+                      </svg><span class="cmn__text cmn__text--small cmn__extra">Беговая</span>
+                    </div><span class="cmn__text cmn__text--small cmn__light">15 минут пешком</span>
+                  </div>
+                </div>
+                <div class="about__content">
+                  <div class="about__content-section"><span class="cmn__text cmn__text--info cmn__light">Цена:</span><span class="cmn__text cmn__text--info-large cmn__main">13 990 000 p</span>
+                    <div class="about__content-badge">
+                      <svg width="14" height="14">
+                        <use xlink:href="#icon-coins"></use>
+                      </svg><span class="cmn__text cmn__text--small">Возможна ипотека</span>
+                    </div>
+                  </div>
+                  <div class="about__content-section"><span class="cmn__text cmn__text--info cmn__light">Телефон:</span><a class="cmn__text cmn__text--info-large cmn__main" href="tel:+79618000030">+79618000030</a><span class="cmn__text cmn__text--small cmn__light">Зуева Надежда Павловна</span></div>
+                </div>
+                <div class="about__info">
+                  <div class="about__info-section">
+                    <div class="about__info-section-top"><span class="cmn__text cmn__text--med cmn__main">Общая информация:</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Общая площадь:</span><span class="cmn__text cmn__main">65.9 м2</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Площадь комнат:</span><span class="cmn__text cmn__main">17,3+18,1 м2</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Площадь кухни:</span><span class="cmn__text cmn__main">15.4 м2</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Этаж:</span><span class="cmn__text cmn__main">6 из 12</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Тип сделки:</span><span class="cmn__text cmn__main">Прямая продажа</span></div>
+                  </div>
+                  <div class="about__info-section">
+                    <div class="about__info-section-top"><span class="cmn__text cmn__text--med cmn__main">Информация о доме:</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Материал:</span><span class="cmn__text cmn__main">Кирпично-монолитный</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Тип:</span><span class="cmn__text cmn__main">Кирп. монолитный</span></div>
+                    <div class="about__info-section-field"><span class="cmn__text cmn__light">Год постройки:</span><span class="cmn__text cmn__main">2015</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__section presentation__section--description">
+              <div class="description">
+                <div class="description__header"><span class="cmn__text cmn__text--med">Описание</span></div>
+                <div class="description__content">
+                  <p class="cmn__text">А также многие известные личности представлены в исключительно положительном свете. Идейные соображения высшего порядка, а также семантический разбор внешних противодействий представляет собой интересный эксперимент проверки переосмысления внешнеэкономических политик. Таким образом, постоянное информационно-пропагандистское обеспечение нашей деятельности напрямую зависит от стандартных подходов.</p>
+                  <p class="cmn__text">С другой стороны, экономическая повестка сегодняшнего дня предполагает независимые способы реализации первоочередных требований. В рамках спецификации современных стандартов, элементы политического процесса, вне зависимости от их уровня, должны быть ассоциативно распределены по отраслям. Лишь ключевые особенности структуры проекта неоднозначны и будут преданы социально-демократической анафеме. А также многие известные личности представлены в исключительно положительном свете. Идейные соображения высшего порядка, а также семантический разбор внешних противодействий представляет собой интересный эксперимент проверки переосмысления внешнеэкономических политик. Таким образом, постоянное информационно-пропагандистское обеспечение нашей деятельности напрямую зависит от стандартных подходов.</p>
+                  <p class="cmn__text">С другой стороны, экономическая повестка сегодняшнего дня предполагает независимые способы реализации первоочередных требований. В рамках спецификации современных стандартов, элементы политического процесса, вне зависимости от их уровня, должны быть ассоциативно распределены по отраслям. Лишь ключевые особенности структуры проекта неоднозначны и будут преданы социально-демократической анафеме.</p>
+                  <p class="cmn__text">С другой стороны, экономическая повестка сегодняшнего дня предполагает независимые способы реализации первоочередных требований. В рамках спецификации современных стандартов, элементы политического процесса, вне зависимости от их уровня, должны быть ассоциативно распределены по отраслям. Лишь ключевые особенности структуры проекта неоднозначны и будут преданы социально-демократической анафеме.</p>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__section presentation__section--map">
+              <div class="map">
+                <div id="yandex-map"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -51,7 +142,7 @@
     <footer class="footer">
       <div class="cmn__container footer__container"><img class="header__logo" src="./assets/img/logo.png" alt="логотип" width="117" height="100">
         <div class="footer__info">
-          <div class="info"><span class="cmn__text cmn__text--small cmn__main">Агентство недвижимости<br>Первое Ипотечное Агентство</span><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="https://www.piaspb.ru">www.piaspb.ru</a><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="mailto:N.Zueva@pia-spb.ru">N.Zueva@pia-spb.ru</a><a class="cmn__text cmn__text--info cmn__main" href="tel:+78123353696">+78123353696</a></div>
+          <div class="contacts"><span class="cmn__text cmn__text--small cmn__main">Агентство недвижимости<br>Первое Ипотечное Агентство</span><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="https://www.piaspb.ru">www.piaspb.ru</a><a class="cmn__text cmn__text--small cmn__gray cmn__underline" href="mailto:N.Zueva@pia-spb.ru">N.Zueva@pia-spb.ru</a><a class="cmn__text cmn__text--info cmn__main" href="tel:+78123353696">+78123353696</a></div>
         </div>
         <div class="footer__user">
           <div class="user"><img src="./assets/img/avatar.png" alt="аватар" width="100" height="100">

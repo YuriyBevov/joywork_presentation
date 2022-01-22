@@ -1,0 +1,67 @@
+-
+  const commonChars = [
+    { name: 'Общая площадь:', value: '65.9 м2' }, 
+    { name: 'Площадь комнат:', value: '17,3+18,1 м2' }, 
+    { name: 'Площадь кухни:', value: '15.4 м2' }, 
+    { name: 'Этаж:', value: '6 из 12' }, 
+    { name: 'Тип сделки:', value: 'Прямая продажа' },
+  ]
+
+-
+  const houseChars = [
+    { name: 'Материал:', value: 'Кирпично-монолитный' }, 
+    { name: 'Тип:', value: 'Кирп. монолитный' }, 
+    { name: 'Год постройки:', value: '2015' },
+  ]
+
+.about
+  .about__header
+    h2.cmn__title Объект 23720026
+
+    .about__header-section
+      .about__header-date
+        svg(width="18" height="18")
+          use(xlink:href="#icon-calendar")
+        span.cmn__text.cmn__text--small.cmn__light 15 января 2022 18:34
+      span.cmn__text.cmn__text--small.cmn__light Продается
+
+    .about__header-section
+      address.cmn__text.cmn__text--med.cmn__main Самарская обл, Сызранский р-н, деревня Бутырки, ул Башканова 
+
+    .about__header-section
+      .about__header-metro
+        svg(width="20" height="20")
+          use(xlink:href="#icon-metro")
+        span.cmn__text.cmn__text--small.cmn__extra Беговая
+      span.cmn__text.cmn__text--small.cmn__light 15 минут пешком
+
+  .about__content
+    .about__content-section
+      span.cmn__text.cmn__text--info.cmn__light Цена:
+      span.cmn__text.cmn__text--info-large.cmn__main 13 990 000 p
+      .about__content-badge
+        svg(width="14" height="14")
+          use(xlink:href="#icon-coins")
+        span.cmn__text.cmn__text--small Возможна ипотека
+    .about__content-section
+      span.cmn__text.cmn__text--info.cmn__light Телефон:
+      a(href="tel:+79618000030").cmn__text.cmn__text--info-large.cmn__main +79618000030
+      span.cmn__text.cmn__text--small.cmn__light Зуева Надежда Павловна
+
+  .about__info
+    .about__info-section
+      .about__info-section-top
+        span.cmn__text.cmn__text--med.cmn__main Общая информация:
+      each char in commonChars
+        .about__info-section-field
+          span.cmn__text.cmn__light= char.name
+          span.cmn__text.cmn__main= char.value
+
+    .about__info-section
+      .about__info-section-top
+        span.cmn__text.cmn__text--med.cmn__main Информация о доме:
+      each char in houseChars
+        .about__info-section-field
+          span.cmn__text.cmn__light= char.name
+          span.cmn__text.cmn__main= char.value
+

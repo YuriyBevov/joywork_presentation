@@ -1,11 +1,11 @@
-.info {
+.contacts {
     display: flex;
     flex-direction: column;
     margin-right: auto;
 
     span,
     a {
-        margin-bottom: 1.2rem;
+        margin-bottom: 12px;
     }
 
     a:last-child {

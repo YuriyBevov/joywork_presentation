@@ -1,2 +1,58 @@
+-
+  const slides = [
+    {
+      img: './assets/img/slide_1.jpg'
+    },
+
+    {
+      img: './assets/img/slide_2.jpg'
+    },
+
+    {
+      img: './assets/img/slide_3.jpg'
+    },
+
+    {
+      img: './assets/img/slide_4.jpg'
+    },
+
+    {
+      img: './assets/img/slide_5.jpg'
+    },
+
+    {
+      img: './assets/img/slide_6.jpg'
+    },
+
+    {
+      img: './assets/img/slide_7.jpg'
+    },
+
+    {
+      img: './assets/img/slide_8.jpg'
+    },
+
+    {
+      img: './assets/img/slide_1.jpg'
+    },
+
+    {
+      img: './assets/img/slide_6.jpg'
+    },
+
+    {
+      img: './assets/img/slide_7.jpg'
+    }
+  ]
+
 .slider
-  p slider
+  .swiper-container.apartment-slider 
+      .swiper-wrapper
+        each slide in slides
+          .swiper-slide
+            img(src=slide.img alt="фото объекта")
+      .swiper-container.apartment-slider-thumbs(thumbsSlider="")
+        .swiper-wrapper
+          each slide in slides
+            .swiper-slide
+              img(src=slide.img alt="фото объекта")

@@ -1,0 +1,127 @@
+.about {
+    padding-bottom: 40px;
+    &__header {
+        padding-bottom: 20px;
+        border-bottom: $light-border;
+
+        h2 {
+            margin-bottom: 16px;
+        }
+
+        &-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            address {
+                font-style: normal;
+            }
+        }
+
+        &-date,
+        &-metro {
+            display: flex;
+            align-items: center;
+        }
+
+        &-date {
+            margin-right: 20px;
+            
+            svg {
+                margin-right: 6px;
+            }
+        }
+
+        &-metro {
+            margin-right: 10px;
+            
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        border-bottom: $light-border;
+
+        &-section {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-right: auto;
+            padding-right: 20px;
+
+            span,
+            a {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-badge {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            padding: 6px 10px;
+            background: linear-gradient(180deg, #429F46 0%, #388E3C 100%), #FFFFFF;
+            border: 1px solid #328436;
+            border-radius: 23px;
+            color: $white;
+
+            span {
+                margin-bottom: 0;
+            }
+
+            svg {
+                margin-right: 4px;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        width: 100%;
+        padding-bottom: 20px;
+
+        max-height: 300px;
+        overflow: hidden;
+        overflow-y: auto;
+
+        &-section {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-right: auto;
+            padding-right: 20px;
+
+            &-top {
+                position: sticky;
+                top: 0;
+                background-color: white;
+                padding-bottom: 20px;
+                border-bottom: $light-border;
+            }
+
+            &-field {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 14px 0;
+                border-bottom: $light-border;
+
+                span {
+                    display: inline-block;
+                    width: 50%;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}

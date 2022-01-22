@@ -1,21 +1,29 @@
 .header {
-    padding: 2rem 0;
-    
+    position: sticky;
+    top: 0;
+
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: $white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+
     &__container {
         display: flex;
         align-items: center;
     }
 
     &__logo {
-        margin-right: 2rem;
+        margin-right: 20px;
     }
 
-    &__info {
+    &__contacts {
         margin-right: auto;
     }
 
     &__user {
         display: flex;
         align-items: center;
+        margin-right: 200px;
     }
 }

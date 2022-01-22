@@ -4,33 +4,33 @@
     }
 
     &__title {
-        font-size: 3.6rem;
-        line-height: 4.3rem;
+        font-size: 36px;
+        line-height: 43px;
         color: $black;
     }
 
     &__text {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
+        font-size: 15px;
+        line-height: 18px;
         
         &--small {
-            font-size: 1.4rem;
-            line-height: 1.7rem;
+            font-size: 14px;
+            line-height: 17px;
         }
 
-        &--big {
-            font-size: 1.8rem;
-            line-height: 2.2rem;
+        &--med {
+            font-size: 18px;
+            line-height: 22px;
         }
 
         &--info {
-            font-size: 1.6rem;
-            line-height: 1.9rem;
+            font-size: 16px;
+            line-height: 19px;
         }
 
         &--info-large {
-            font-size: 2.8rem;
-            line-height: 3.4rem;
+            font-size: 28px;
+            line-height: 34px;
         }
     }
 

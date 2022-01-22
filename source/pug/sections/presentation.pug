@@ -1,7 +1,12 @@
 section.presentation
   .cmn__container
-    include ./blocks/slider
-    include ./blocks/info
-    include ./blocks/description
-    include ./blocks/map
+    .presentation__container
+      .presentation__section.presentation__section--slider
+        include ./blocks/slider
+      .presentation__section.presentation__section--about
+        include ./blocks/about
+      .presentation__section.presentation__section--description
+        include ./blocks/description
+      .presentation__section.presentation__section--map
+        include ./blocks/map
     
