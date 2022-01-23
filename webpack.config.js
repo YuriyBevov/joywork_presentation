@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development', // сменив на production и запустив gulp build сделает минификацию js
+  mode: 'production', // сменив на production и запустив gulp build сделает минификацию js
   output: {
     filename: './js/bundle.js'
   },
