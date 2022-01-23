@@ -8,7 +8,7 @@
         line-height: 43px;
         color: $black;
 
-        @media(max-width: $tablet) {
+        @media(max-width: $desktop) {
             font-size: 28px;
             line-height: 34px;
         }
@@ -42,11 +42,16 @@
             font-size: 28px;
             line-height: 34px;
 
-            @media(max-width: $tablet) {
+            @media(max-width: $desktop) {
                 font-size: 24px;
                 line-height: 29px;
             }
         }
+    }
+
+    &__f-semi {
+        font-family: $f1_semi;
+        font-weight: 600;
     }
 
     &__underline {
@@ -72,6 +77,4 @@
     &__extra {
         color: $black-400;
     }
-
-
 }

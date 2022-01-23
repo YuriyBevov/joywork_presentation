@@ -4,6 +4,10 @@
             margin-bottom: 10px;
             height: 580px;
 
+            @media(max-width: $desktop) {
+                height: 480px;
+            }
+
             @media(max-width: $tablet) {
                 height: 290px;
             }
