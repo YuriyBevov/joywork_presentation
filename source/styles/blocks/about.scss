@@ -15,8 +15,15 @@
 
         &-section {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin-bottom: 16px;
+
+            &--position {
+                span {
+                    padding-left: 30px;
+                }
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -27,8 +34,14 @@
             }
         }
 
+        &-position {
+            span {
+                padding-left: 0;
+            }
+        }
+
         &-date,
-        &-metro {
+        &-position {
             display: flex;
             align-items: center;
         }
@@ -41,7 +54,7 @@
             }
         }
 
-        &-metro {
+        &-position {
             margin-right: 10px;
             
             svg {
