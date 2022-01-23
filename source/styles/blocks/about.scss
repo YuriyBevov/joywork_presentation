@@ -1,5 +1,10 @@
 .about {
     padding-bottom: 40px;
+
+    @media(max-width: $desktop) {
+        padding-bottom: 0;
+    }
+
     &__header {
         padding-bottom: 20px;
         border-bottom: $light-border;
@@ -52,12 +57,29 @@
         margin-bottom: 20px;
         border-bottom: $light-border;
 
+        @media(max-width: $tablet) {
+            margin-bottom: 10px;
+        }
+
+        @media(max-width: $tablet) {
+            flex-direction: column;
+        }
+
         &-section {
             display: flex;
             flex-direction: column;
             width: 50%;
             margin-right: auto;
             padding-right: 20px;
+
+            @media(max-width: $tablet) {
+                margin-right: 0;
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;    
+                }
+            }
 
             span,
             a {
@@ -94,6 +116,12 @@
         overflow: hidden;
         overflow-y: auto;
 
+        @media(max-width: $tablet) {
+            flex-direction: column;
+            overflow: visible;
+            max-height: 100%;
+        }
+
         &-section {
             display: flex;
             flex-direction: column;
@@ -101,12 +129,21 @@
             margin-right: auto;
             padding-right: 20px;
 
+            @media(max-width: $tablet) {
+                width: 100%;
+            }
+
             &-top {
                 position: sticky;
                 top: 0;
                 background-color: white;
                 padding-bottom: 20px;
                 border-bottom: $light-border;
+
+                @media(max-width: $tablet) {
+                    position: static;
+                    padding: 20px 0;
+                }
             }
 
             &-field {

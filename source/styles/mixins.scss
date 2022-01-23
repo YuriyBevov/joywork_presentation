@@ -4,4 +4,9 @@
     min-width: min-width;
     padding: 0 40px;
     margin: 0 auto;
+
+    @media(max-width: $tablet_large) {
+        padding: 20px;
+        padding-bottom: 0;
+    }
 }

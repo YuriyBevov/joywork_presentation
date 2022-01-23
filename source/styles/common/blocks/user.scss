@@ -1,8 +1,18 @@
 .user {
     display: flex;
+    min-width: 200px;
+
+    @media(max-width: $tablet) {
+        flex-direction: column;
+    }
 
     img {
         margin-right: 20px;
+
+        @media(max-width: $tablet) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
     
     &__info {

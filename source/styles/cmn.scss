@@ -7,6 +7,16 @@
         font-size: 36px;
         line-height: 43px;
         color: $black;
+
+        @media(max-width: $tablet) {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        @media(max-width: $mobile) {
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
 
     &__text {
@@ -31,6 +41,11 @@
         &--info-large {
             font-size: 28px;
             line-height: 34px;
+
+            @media(max-width: $tablet) {
+                font-size: 24px;
+                line-height: 29px;
+            }
         }
     }
 

@@ -17,7 +17,7 @@ $w_xxl: 1920px;
 $w_xl: 1440px;
 $w_lg: 960px;
 $w_md: 768px;
-$w_sm: 544px;
+$w_sm: 480px;
 $w_xs: 320px;
 
 $min_width: $w_xs;
@@ -26,10 +26,10 @@ $max-width: $w_xxl;
 // breakpoints
 
 $desktop_large   :  $w_xxl;
-$desktop_small   :  $w_xl;
+$desktop         :  $w_xl;
 $tablet_large    :  $w_lg;
-$tablet_small    :  $w_md;
-$mobile_large    :  $w_md;
+$tablet          :  $w_md;
+$mobile          :  $w_sm;
 
 // colors
 

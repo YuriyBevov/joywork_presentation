@@ -2,12 +2,16 @@
     .apartment-slider {
         .swiper-wrapper {
             margin-bottom: 10px;
+            height: 580px;
+
+            @media(max-width: $tablet) {
+                height: 290px;
+            }
         }
 
         .swiper-slide {
-            width: 100px;
-            height: 580px;
-            //max-height: 580px;
+            width: 100%;
+            height: 100%;
 
             img {
                 width: 100%;
@@ -18,12 +22,24 @@
     }
 
     .apartment-slider-thumbs {
-        width: 100%;
-        height: 80px;
+        .swiper-wrapper {
+            width: 100%;
+            height: 80px;
+
+            @media(max-width: $tablet) {
+                height: 64px;
+            }
+        }
 
         .swiper-slide {
             width: 100px;
             height: 80px;
+
+            @media(max-width: $tablet) {
+                width: 80px;
+                height: 64px;
+            }
+
             cursor: pointer;
 
             img {
