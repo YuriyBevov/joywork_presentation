@@ -9,20 +9,6 @@ if(slider) {
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
       spaceBetween: 10,
-      //direction: "vertical",
-
-      breakpoints: {
-        768: {
-          //direction: "vertical",
-          //spaceBetween: 0,
-        },
-
-        534: {
-          //spaceBetween: 10,
-          //direction: "vertical",
-        },
-      }
-      
     });
 
     let swiperThumbs = new Swiper(".apartment-slider", {
