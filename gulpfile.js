@@ -68,6 +68,7 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(css())
     .pipe(postcss([ autoprefixer() ]))
+    .pipe(gulp.dest(PATHS.styles.dest))
     .pipe(csso())
     .pipe(rename(PATHS.styles.outputFileName))
     .pipe(sourcemap.write("."))
