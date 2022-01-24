@@ -6,5 +6,6 @@ mixin head(title, desc, keywords)
     meta(name="description" content=`${desc}`)
     meta(name="keywords" content=`${keywords}`)
     title!= title
+    link(rel="preload" href="./fonts/latoregular.woff" as="font" type="font/woff" crossorigin)
     link(rel="stylesheet" href="./css/styles.min.css")
     script(src="https://api-maps.yandex.ru/2.1/?56c6be8d-b5f9-45d5-8ffa-7fdb884fcf53&lang=ru_RU")
