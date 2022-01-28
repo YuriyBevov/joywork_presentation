@@ -133,12 +133,6 @@
         overflow: hidden;
         overflow-y: auto;
 
-        /*@media(max-width: $tablet) {
-            flex-direction: column;
-            overflow: visible;
-            max-height: 100%;
-        } */
-
         &-section {
             display: flex;
             flex-direction: column;
