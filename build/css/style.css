@@ -1142,6 +1142,9 @@ button.swiper-pagination-bullet {
     max-height: 300px;
     overflow: hidden;
     overflow-y: auto; }
+    @media (max-width: 768px) {
+      .about__info {
+        flex-wrap: wrap; } }
     .about__info-section {
       display: flex;
       flex-direction: column;
