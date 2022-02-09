@@ -12,21 +12,11 @@ if(slider) {
     });
 
     let swiperThumbs = new Swiper(".apartment-slider", {
-      // zoom: true,
       loop: true,
       spaceBetween: 10,
 
       thumbs: {
         swiper: swiper,
       },
-    });
-
-    swiperThumbs.on('click', function (evt) {
-
-        /*let zoomed = document.querySelector('.swiper-slide-zoomed');
-
-        if(zoomed) {
-          zoomed.classList.remove('swiper-slide-zoomed');
-        }*/
     });
 }
