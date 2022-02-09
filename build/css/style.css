@@ -1030,11 +1030,18 @@ button.swiper-pagination-bullet {
 .slider .apartment-slider .swiper-slide {
   width: 100%;
   height: 100%; }
+  .slider .apartment-slider .swiper-slide a {
+    width: 100%;
+    height: 100%; }
   .slider .apartment-slider .swiper-slide img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.slider .apartment-slider .swiper-slide-zoomed img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important; }
 
 .slider .apartment-slider-thumbs .swiper-wrapper {
   width: 100%;

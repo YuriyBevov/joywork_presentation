@@ -50,7 +50,9 @@
       .swiper-wrapper
         each slide in slides
           .swiper-slide
-            img(src=slide.img alt="фото объекта")
+            .swiper-zoom-container
+              a(href=slide.img target="_blank") 
+                img(src=slide.img alt="фото объекта")
       .swiper-container.apartment-slider-thumbs
         .swiper-wrapper
           each slide in slides
