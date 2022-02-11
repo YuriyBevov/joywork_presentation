@@ -383,6 +383,10 @@ input, textarea {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none; }
+
 .cmn__container {
   width: 100%;
   max-width: 1920px;
@@ -1039,9 +1043,19 @@ button.swiper-pagination-bullet {
     -o-object-fit: cover;
        object-fit: cover; }
 
-.slider .apartment-slider .swiper-slide-zoomed img {
-  -o-object-fit: contain !important;
-     object-fit: contain !important; }
+.slider .apartment-slider .apartment-slider-button-prev,
+.slider .apartment-slider .apartment-slider-button-next {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url("../assets/img/slider-arr.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 21px;
+  background-position: center; }
+
+.slider .apartment-slider .apartment-slider-button-next {
+  transform: rotate(180deg); }
 
 .slider .apartment-slider-thumbs .swiper-wrapper {
   width: 100%;

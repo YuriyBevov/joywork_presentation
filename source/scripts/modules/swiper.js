@@ -1,5 +1,5 @@
-import Swiper, { Autoplay, Thumbs, Zoom} from 'swiper';
-Swiper.use([Autoplay, Thumbs, Zoom]);
+import Swiper, { Autoplay, Thumbs, Zoom, Navigation} from 'swiper';
+Swiper.use([Autoplay, Thumbs, Zoom, Navigation]);
 
 const slider = document.querySelector('.swiper-container');
 
@@ -8,12 +8,16 @@ if(slider) {
       slidesPerView: "auto",
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
-      spaceBetween: 10,
+      spaceBetween: 10, 
     });
 
     let swiperThumbs = new Swiper(".apartment-slider", {
-      loop: true,
       spaceBetween: 10,
+
+      navigation: {
+        nextEl: '.apartment-slider-button-next',
+        prevEl: '.apartment-slider-button-prev',
+      },
 
       thumbs: {
         swiper: swiper,
