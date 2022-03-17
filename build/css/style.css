@@ -406,6 +406,7 @@ input, textarea {
       padding-bottom: 0; } }
 
 .cmn__title {
+  font-family: "latosemibold";
   font-size: 36px;
   line-height: 43px;
   color: #000000; }
