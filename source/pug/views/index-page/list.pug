@@ -1,0 +1,109 @@
+-
+  const object_1 = [
+    {img: './assets/img/slide_2.jpg'},
+    {img: './assets/img/slide_3.jpg'},
+    {img: './assets/img/slide_7.jpg'},
+    {img: './assets/img/slide_8.jpg'},
+  ]
+-
+  const object_2 = [
+    {img: './assets/img/slide_1.jpg'},
+    {img: './assets/img/slide_2.jpg'},
+    {img: './assets/img/slide_4.jpg'},
+    {img: './assets/img/slide_5.jpg'},
+    {img: './assets/img/slide_6.jpg'},
+  ]
+
+include ../../mixins/main-slider
+include ../../mixins/more-link
+
+section.object
+  .cmn__container
+    .presentation__container
+      h1.visually-hidden Агентство недвижимости "Первое Ипотечное Агентство". Презентация объекта
+      
+      ul.object__list
+        li.object__list-item
+            .object__list-item-slider
+                +main-slider(object_1, false)
+            .object__list-item-content.object-info
+                .object-info__header
+                    h2 Отличная квартира в сталинке и очень длинный заголовок
+                    svg(width="24" height="24")
+                        use(xlink:href="#icon-fav")
+                .object-info__content
+                    .object-info__content-section
+                        .flex-align-center
+                            svg(width="18" height="18")
+                                use(xlink:href="#icon-calendar")
+                            span.cmn__text.cmn__text--small.cmn__light 15 января 2022 18:34 Продается
+
+                        address.cmn__text.cmn__text--med.cmn__main Санкт-Петербург,пос. Шушары, Московское ш., 256к2 еще какой то районе, и еще какая нибудь информация, показываю, если ее много.
+                        
+                        span.cmn__text.cmn__text--small.cmn__light Всеволжский район
+
+                        .flex-align-center
+                            svg(width="20" height="20")
+                                use(xlink:href="#icon-metro")
+        
+                            span.cmn__text.cmn__text--small.cmn__extra Проспект Ветеранов, Ленинский проспект, Автово
+                        span.cmn__text.cmn__text--small.cmn__light 15 минут пешком
+
+                    .object-info__content-section
+                        p.cmn__text.cmn__text--small <span>56</span> кв. м
+                        p.cmn__text.cmn__text--small.cmn__light Жилая: <span>19.0</span> кв. м
+                        p.cmn__text.cmn__text--small.cmn__light Кухни: <span>12.0</span> кв. м
+                        p.cmn__text.cmn__text--small Этаж: <span>3</span> этаж из <span>5</span>
+                    .object-info__content-section
+                        span.cmn__text.cmn__text--small.cmn__light Цена
+                        strong 3 300 000 p
+                        span.cmn__text.cmn__text--small.cmn__light 100 000 p (м2)
+                        .mortgage-badge
+                            svg(width="14" height="14")
+                                use(xlink:href="#icon-coins")
+                            span.cmn__text.cmn__text--small Возможна ипотека
+                .object-info__footer
+                    +more-link('Подробнее')
+
+
+        li.object__list-item
+            .object__list-item-slider
+                +main-slider(object_1, false)
+            .object__list-item-content.object-info
+                .object-info__header
+                    h2 Отличная квартира в сталинке и очень длинный заголовок
+                    svg(width="24" height="24")
+                        use(xlink:href="#icon-fav")
+                .object-info__content
+                    .object-info__content-section
+                        .flex-align-center
+                            svg(width="18" height="18")
+                                use(xlink:href="#icon-calendar")
+                            span.cmn__text.cmn__text--small.cmn__light 15 января 2022 18:34 Продается
+
+                        address.cmn__text.cmn__text--med.cmn__main Санкт-Петербург,пос. Шушары, Московское ш., 256к2 еще какой то районе, и еще какая нибудь информация, показываю, если ее много.
+                        
+                        span.cmn__text.cmn__text--small.cmn__light Всеволжский район
+
+                        .flex-align-center
+                            svg(width="20" height="20")
+                                use(xlink:href="#icon-metro")
+        
+                            span.cmn__text.cmn__text--small.cmn__extra Проспект Ветеранов, Ленинский проспект, Автово
+                        span.cmn__text.cmn__text--small.cmn__light 15 минут пешком
+                        
+                    .object-info__content-section
+                        p.cmn__text.cmn__text--small <span>56</span> кв. м
+                        p.cmn__text.cmn__text--small.cmn__light Жилая: <span>19.0</span> кв. м
+                        p.cmn__text.cmn__text--small.cmn__light Кухни: <span>12.0</span> кв. м
+                        p.cmn__text.cmn__text--small Этаж: <span>3</span> этаж из <span>5</span>
+                    .object-info__content-section
+                        span.cmn__text.cmn__text--small.cmn__light Цена
+                        strong 3 300 000 p
+                        span.cmn__text.cmn__text--small.cmn__light 100 000 p (м2)
+                        .mortgage-badge
+                            svg(width="14" height="14")
+                                use(xlink:href="#icon-coins")
+                            span.cmn__text.cmn__text--small Возможна ипотека
+                .object-info__footer
+                    +more-link('Подробнее')

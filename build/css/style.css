@@ -319,6 +319,48 @@ template {
 [hidden] {
   display: none; }
 
+.flex-wrap, .presentation__container, .about__header-section {
+  display: flex;
+  flex-wrap: wrap; }
+
+.flex-column, .contacts, .user__info, .object-info, .object-info__content-section, .about__content-section, .about__info-section, .map #yandex-map .zoom {
+  display: flex;
+  flex-direction: column; }
+
+.flex-centered-content, .more-link, .page-header, .page-header a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hover-opacity-transition, .more-link {
+  opacity: 1;
+  transition: opacity 0.3s ease-in; }
+  @media (min-width: 768px) {
+    .hover-opacity-transition:hover, .more-link:hover, .hover-opacity-transition:focus, .more-link:focus {
+      opacity: 0.7; } }
+
+.flex-align-center, .object-info__content .wrapper {
+  display: flex;
+  align-items: center; }
+  .flex-align-center svg, .object-info__content .wrapper svg {
+    margin-right: 10px; }
+
+.mortgage-badge {
+  display: flex;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 6px 10px;
+  background: linear-gradient(180deg, #429F46 0%, #388E3C 100%), #FFFFFF;
+  border: 1px solid #328436;
+  border-radius: 23px;
+  color: #ffffff; }
+  .mortgage-badge span {
+    margin-bottom: 0; }
+  .mortgage-badge svg {
+    margin-right: 4px; }
+
 /* stylelint-disable */
 *,
 *::before,
@@ -922,6 +964,19 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
+.more-link {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: #3c9540;
+  color: #ffffff;
+  border-radius: 5px; }
+  @media (max-width: 479px) {
+    .more-link {
+      width: 100%; } }
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -959,8 +1014,6 @@ button.swiper-pagination-bullet {
         margin-right: 0; } }
 
 .contacts {
-  display: flex;
-  flex-direction: column;
   margin-right: auto; }
   .contacts span,
   .contacts a {
@@ -981,18 +1034,11 @@ button.swiper-pagination-bullet {
       .user img {
         margin-right: 0;
         margin-bottom: 20px; } }
-  .user__info {
-    display: flex;
-    flex-direction: column; }
-    .user__info span,
-    .user__info a {
-      margin-bottom: 12px; }
-    .user__info a:last-child {
-      margin-bottom: 0; }
-
-.presentation__container {
-  display: flex;
-  flex-wrap: wrap; }
+  .user__info span,
+  .user__info a {
+    margin-bottom: 12px; }
+  .user__info a:last-child {
+    margin-bottom: 0; }
 
 .presentation__section {
   width: 48%;
@@ -1017,10 +1063,133 @@ button.swiper-pagination-bullet {
       width: 100%;
       order: 1; }
       .presentation__section--description {
-        order: 3;
+        order: 2;
         margin-bottom: 40px; }
       .presentation__section--map {
-        order: 2; } }
+        order: 3; } }
+
+.object__list {
+  width: 100%; }
+  .object__list-item {
+    display: grid;
+    grid-template-columns: 375px auto;
+    grid-column-gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 300px; }
+    @media (max-width: 959px) {
+      .object__list-item {
+        display: flex;
+        flex-direction: column; } }
+  .object__list-item-slider {
+    padding-top: 25px; }
+    @media (max-width: 959px) {
+      .object__list-item-slider {
+        padding-top: 0;
+        width: 100%;
+        margin-bottom: 20px; } }
+    .object__list-item-slider .slider .apartment-slider .swiper-wrapper {
+      height: 200px; }
+      @media (max-width: 959px) {
+        .object__list-item-slider .slider .apartment-slider .swiper-wrapper {
+          height: 250px; } }
+      @media (max-width: 534px) {
+        .object__list-item-slider .slider .apartment-slider .swiper-wrapper {
+          height: 200px; } }
+    .object__list-item-slider .slider .apartment-slider .swiper-wrapper {
+      margin-bottom: 0; }
+
+.object-info__header {
+  display: flex;
+  margin-bottom: 20px; }
+  .object-info__header h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #000000;
+    width: calc(100% - 50px); }
+    @media (max-width: 479px) {
+      .object-info__header h2 {
+        font-size: 22px;
+        line-height: 1.1; } }
+  .object-info__header svg {
+    fill: #757575;
+    margin-top: 5px;
+    margin-left: auto; }
+    .object-info__header svg.active {
+      fill: #f31e1e; }
+
+.object-info__content {
+  display: grid;
+  grid-template-columns: auto 200px 200px;
+  grid-column-gap: 30px;
+  margin-bottom: 20px; }
+  @media (max-width: 1359px) {
+    .object-info__content {
+      display: flex;
+      flex-wrap: wrap; } }
+  .object-info__content-section {
+    justify-content: flex-end; }
+    .object-info__content-section > span {
+      display: block;
+      margin-bottom: 10px; }
+    .object-info__content-section > p,
+    .object-info__content-section > strong {
+      margin-bottom: 10px; }
+    .object-info__content-section .mortgage-badge {
+      margin-bottom: 13px; }
+    .object-info__content-section strong {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px; }
+    @media (max-width: 1359px) {
+      .object-info__content-section:not(:first-child) {
+        width: 50%;
+        max-width: 180px; }
+      .object-info__content-section:first-child {
+        margin-bottom: 15px; } }
+    @media (max-width: 479px) {
+      .object-info__content-section {
+        margin-bottom: 15px; }
+        .object-info__content-section address {
+          font-size: 16px;
+          line-height: 1.1; }
+        .object-info__content-section:not(:first-child) {
+          width: 100%;
+          max-width: 100%; } }
+  .object-info__content .wrapper {
+    margin-bottom: 10px; }
+  .object-info__content .flex-align-center, .object-info__content .wrapper {
+    margin-bottom: 10px; }
+  .object-info__content address {
+    font-style: normal;
+    margin-bottom: 10px; }
+
+.object-info__footer {
+  margin-top: auto; }
+
+.page-header {
+  display: none;
+  padding-top: 20px; }
+  .page-header svg {
+    margin-right: 10px; }
+  .page-header span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575; }
+  @media (max-width: 960px) {
+    .page-header {
+      display: flex; } }
+  @media (max-width: 480px) {
+    .page-header {
+      margin-bottom: 10px; } }
 
 .slider .apartment-slider .swiper-wrapper {
   margin-bottom: 10px;
@@ -1034,19 +1203,20 @@ button.swiper-pagination-bullet {
 
 .slider .apartment-slider .swiper-slide {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: linear-gradient(45deg, #f3f3f3, #f7f7f7); }
   .slider .apartment-slider .swiper-slide a {
     width: 100%;
     height: 100%; }
   .slider .apartment-slider .swiper-slide img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
+    -o-object-fit: contain;
+       object-fit: contain; }
 
 .slider .apartment-slider .apartment-slider-button-prev,
 .slider .apartment-slider .apartment-slider-button-next {
-  border: 2px solid white;
+  border: 2px solid #5e5d5d;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -1090,8 +1260,6 @@ button.swiper-pagination-bullet {
     .about__header h2 {
       margin-bottom: 16px; }
     .about__header-section {
-      display: flex;
-      flex-wrap: wrap;
       align-items: center;
       margin-bottom: 16px; }
       .about__header-section--position span {
@@ -1128,8 +1296,6 @@ button.swiper-pagination-bullet {
       .about__content {
         flex-direction: column; } }
     .about__content-section {
-      display: flex;
-      flex-direction: column;
       width: 50%;
       margin-right: auto;
       padding-right: 20px; }
@@ -1168,8 +1334,6 @@ button.swiper-pagination-bullet {
       .about__info {
         flex-wrap: wrap; } }
     .about__info-section {
-      display: flex;
-      flex-direction: column;
       width: 50%;
       margin-right: auto;
       padding-right: 20px; }
@@ -1221,34 +1385,31 @@ button.swiper-pagination-bullet {
   .map #yandex-map {
     width: 100%;
     height: 100%; }
-    .map #yandex-map .zoom {
-      display: flex;
-      flex-direction: column; }
-      .map #yandex-map .zoom-btn {
-        position: relative;
-        border: 0;
-        background-color: #ffffff;
-        width: 30px;
-        height: 30px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; }
-        .map #yandex-map .zoom-btn:hover, .map #yandex-map .zoom-btn:focus {
-          opacity: 0.8; }
-        .map #yandex-map .zoom-btn:active {
-          opacity: 0.6; }
-        .map #yandex-map .zoom-btn::before {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          content: '';
-          width: 24px;
-          height: 24px; }
-        .map #yandex-map .zoom-btn-in {
-          margin-bottom: 2px; }
-          .map #yandex-map .zoom-btn-in::before {
-            background-image: url("../assets/img/zoom-in-icon.svg"); }
-        .map #yandex-map .zoom-btn-out::before {
-          background-image: url("../assets/img/zoom-out-icon.svg"); }
+    .map #yandex-map .zoom-btn {
+      position: relative;
+      border: 0;
+      background-color: #ffffff;
+      width: 30px;
+      height: 30px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; }
+      .map #yandex-map .zoom-btn:hover, .map #yandex-map .zoom-btn:focus {
+        opacity: 0.8; }
+      .map #yandex-map .zoom-btn:active {
+        opacity: 0.6; }
+      .map #yandex-map .zoom-btn::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        width: 24px;
+        height: 24px; }
+      .map #yandex-map .zoom-btn-in {
+        margin-bottom: 2px; }
+        .map #yandex-map .zoom-btn-in::before {
+          background-image: url("../assets/img/zoom-in-icon.svg"); }
+      .map #yandex-map .zoom-btn-out::before {
+        background-image: url("../assets/img/zoom-out-icon.svg"); }
 
 .footer {
   padding: 20px 0;

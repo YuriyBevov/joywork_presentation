@@ -17,8 +17,7 @@
     }
     
     &__info {
-        display: flex;
-        flex-direction: column;
+        @extend .flex-column;
 
         span,
         a {

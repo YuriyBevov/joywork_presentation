@@ -39,7 +39,6 @@
     &__user {
         display: flex;
         align-items: center;
-        //margin-right: 200px;
 
         @media(max-width: $desktop) {
             margin-right: 0;

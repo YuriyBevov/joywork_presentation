@@ -1,13 +1,16 @@
 @import "fonts";
 @import "normalize";
 @import "variables";
+@import "extends";
 @import "mixins";
 @import "global";
 @import "cmn";
 
 //--- plugins
-
 @import "plugins/swiper";
+
+// components
+@import "components/more-link";
 
 // blocks
 @import "common/header";
@@ -15,6 +18,7 @@
 @import "common/blocks/user";
 
 @import "sections/presentation";
+@import "sections/object";
 
 @import "blocks/slider";
 @import "blocks/about";

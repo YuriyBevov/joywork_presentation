@@ -1,0 +1,55 @@
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-opacity-transition {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    
+    @media(min-width: $tablet) {
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.mortgage-badge {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 6px 10px;
+    background: linear-gradient(180deg, #429F46 0%, #388E3C 100%), #FFFFFF;
+    border: 1px solid #328436;
+    border-radius: 23px;
+    color: $white;
+
+    & span {
+        margin-bottom: 0;
+    }
+
+    svg {
+        margin-right: 4px;
+    }
+}

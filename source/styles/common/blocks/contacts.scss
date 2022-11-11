@@ -1,6 +1,5 @@
 .contacts {
-    display: flex;
-    flex-direction: column;
+    @extend .flex-column;
     margin-right: auto;
 
     span,

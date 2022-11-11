@@ -1,9 +1,28 @@
+-
+  const apartment = [
+    {img: './assets/img/slide_1.jpg'},
+    {img: './assets/img/slide_3.jpg'},
+    {img: './assets/img/slide_7.jpg'},
+    {img: './assets/img/slide_4.jpg'},
+    {img: './assets/img/slide_5.jpg'},
+    {img: './assets/img/slide_8.jpg'},
+  ]
+
+
+include ../../mixins/main-slider
+
+.page-header
+  a(href="index.html")
+    svg(width="18" height="18")
+      use(xlink:href="#icon-close")
+    span Вернуться назад
 section.presentation
   .cmn__container
     .presentation__container
       h1.visually-hidden Агентство недвижимости "Первое Ипотечное Агентство". Презентация объекта
       .presentation__section.presentation__section--slider
-        include ./blocks/slider
+        +main-slider(apartment, true)
+
       .presentation__section.presentation__section--about
         include ./blocks/about
       .presentation__section.presentation__section--description

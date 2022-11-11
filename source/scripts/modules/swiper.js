@@ -1,17 +1,23 @@
 import Swiper, { Autoplay, Thumbs, Zoom, Navigation} from 'swiper';
 Swiper.use([Autoplay, Thumbs, Zoom, Navigation]);
 
-const slider = document.querySelector('.swiper-container');
+const apartmentSliders = document.querySelectorAll('.apartment-slider');
 
-if(slider) {
-    let swiper = new Swiper(".apartment-slider-thumbs", {
-      slidesPerView: "auto",
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      spaceBetween: 10, 
-    });
+if(apartmentSliders) {
+  apartmentSliders.forEach(slider => {
+    let isThumbsExist = slider.parentNode.querySelector('.apartment-slider-thumbs');
+    let thumbs = null;
 
-    let swiperThumbs = new Swiper(".apartment-slider", {
+    if(isThumbsExist) {
+      thumbs = new Swiper(".apartment-slider-thumbs", {
+        slidesPerView: "auto",
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        spaceBetween: 10, 
+      });
+    }
+
+    new Swiper(".apartment-slider", {
       spaceBetween: 10,
 
       navigation: {
@@ -20,7 +26,8 @@ if(slider) {
       },
 
       thumbs: {
-        swiper: swiper,
+        swiper: thumbs ? thumbs : null,
       },
     });
+  });
 }

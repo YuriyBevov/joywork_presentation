@@ -14,8 +14,7 @@
         }
 
         &-section {
-            display: flex;
-            flex-wrap: wrap;
+            @extend .flex-wrap;
             align-items: center;
             margin-bottom: 16px;
 
@@ -83,8 +82,7 @@
         }
 
         &-section {
-            display: flex;
-            flex-direction: column;
+            @extend .flex-column;
             width: 50%;
             margin-right: auto;
             padding-right: 20px;
@@ -137,8 +135,7 @@
         }
 
         &-section {
-            display: flex;
-            flex-direction: column;
+            @extend .flex-column;
             width: 50%;
             margin-right: auto;
             padding-right: 20px;
